@@ -5,7 +5,7 @@ import ThemeContext from "../ThemeContext";
 import { useTranslation } from 'react-i18next';
 const Header = () => {
   const [menu, setMenu] = useState("none");
-  const {  chanegTheme } = useContext(ThemeContext);
+  const {  theme,chanegTheme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
   return (
     <header dir="auto">
@@ -33,7 +33,7 @@ const Header = () => {
           <button
             onClick={() => {
               chanegTheme(
-                localStorage.getItem("theme") === "light" ? "dark" : "light"
+                theme === "light" ? "dark" : "light"
               );
             }}
           >
