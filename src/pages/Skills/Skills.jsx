@@ -26,24 +26,30 @@ const skillsAndImg = [
   },
   {
     name: "bootstrap",
-    percent: 65,
+    percent: 70,
     urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
   },
   {
     name: "javaScript",
-    percent: 70,
+    percent: 75,
     urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
   },
   {
     name: "react.js",
-    percent: 75,
+    percent: 80,
     urlImg: "https://cdn-icons-png.flaticon.com/512/1260/1260667.png",
   },
   {
     name: "Material UI",
-    percent: 75,
+    percent: 70,
     urlImg:
       "https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png",
+  },
+  {
+    name: "Firebase (web)",
+    percent: 70,
+    urlImg:
+      "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
   },
 ];
 
@@ -74,19 +80,22 @@ const Skills = () => {
                   className="flex"
                   style={{
                     width: "100px",
+                    height:"100px",
                     marginBottom: "20px",
                     flexDirection: "column",
                     alignItems: "center",
                   }}
                 >
-                  <CircularProgressbarWithChildren value={item.percent}>
-                    <div
+                  {/* <CircularProgressbarWithChildren value={item.percent}>
+          
+                  </CircularProgressbarWithChildren> */}
+
+                  <div
                       className="img_skills"
-                      style={{ backgroundImage: `url(${item.urlImg})` }}
+                      style={{ backgroundImage: `url(${item.urlImg}) ` ,marginBottom:"13px"}}
                     ></div>
-                  </CircularProgressbarWithChildren>
                   <div>
-                    <div style={{ textAlign: "center" }}>{item.percent}%</div>
+                    {/* <div style={{ textAlign: "center" }}>{item.percent}%</div> */}
                     <p>{item.name}</p>
                   </div>
                 </div>

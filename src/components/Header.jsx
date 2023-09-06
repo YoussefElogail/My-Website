@@ -37,7 +37,7 @@ const Header = () => {
               );
             }}
           >
-            {localStorage.getItem("theme")==="light"?t("Light"):t("Dark")}
+            {theme==="light"?t("Light"):t("Dark")}
             
           </button>
         </div>

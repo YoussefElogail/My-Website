@@ -13,6 +13,15 @@ const siteData = [
     discrimination_ar: "هذا هو موقعي التعريفي الاول",
     discrimination_en: "it is the first portfolio for me",
   },
+  {
+    title_ar: "موقع قائمة المهام",
+    title_en: "To do list website",
+    urlSite: "https://to-do-list-132e3.firebaseapp.com/",
+    urlImg:"./imgs/img_site/2.png",
+    lang: ["html5", "css3","javaScript","React.js","Firebase"],
+    discrimination_ar: "موقع قائمة المهام تم استخدام firebase (Authentication-Firestore Database)",
+    discrimination_en: " To do list website used firebase  (Authentication-Firestore Database)",
+  },
 
 ];
 const Projects = () => {
