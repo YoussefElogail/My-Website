@@ -30,6 +30,11 @@ const skillsAndImg = [
     urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
   },
   {
+    name:"sass",
+    percent:75,
+    urlImg:"https://cdn-icons-png.flaticon.com/512/5968/5968358.png"
+  },
+  {
     name: "javaScript",
     percent: 75,
     urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",

@@ -17,8 +17,9 @@
   align-items: center;
 }
 .main_projects .con_sec .card {
-  height: 250px;
-  width: 250px;
+  position: relative;
+  height: 300px;
+  max-width: 250px;
   border-radius: 5px;
   flex-direction: column;
   align-items: center;
@@ -47,10 +48,11 @@
   width: 250px;
   background-size: cover;
   background-position: center ;
+  opacity: 0.7;
   transition: all 0.2s;
 }
 .main_projects .con_sec .card .my_pro_pic:hover {
-  opacity: 0.85;
+  opacity: 1;
 }
 .main_projects .con_sec .con_ul {
   list-style: none;
@@ -118,6 +120,21 @@
   border-top: 15px solid var(---colorDark1);
 }
 
+.main_projects .con_sec .gh-links{
+  position: absolute;
+  bottom: 5px;
+  color: var(---fontColor);
+}
+.main_projects .con_sec .gh-links:hover{
+  color: var(---colorDark1);
+  font-weight: bold;
+}
+.dark .main_projects .con_sec .gh-links {
+  color: var(---fontColorDark);
+}
+.dark .main_projects .con_sec .gh-links:hover{
+  color: var(---colorLight1);
+}
 @media (min-width: 660px) {
   .main_projects .con_sec {
     max-width: 1100px;

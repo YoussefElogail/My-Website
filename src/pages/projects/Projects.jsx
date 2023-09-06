@@ -4,14 +4,24 @@ import Footer from "../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 const siteData = [
+  // {
+  //   title_ar: "موقعي التعريفي الاول",
+  //   title_en: "my first portfolio",
+  //   urlSite: "https://zlllxjdbnrqiiibu3fowvw.on.drv.tw/youssef%20elogail%20portfolio/1-en.html",
+  //   urlImg:"./imgs/img_site/1.png",
+  //   lang: ["html5", "css3","javaScript"],
+  //   discrimination_ar: "هذا هو موقعي التعريفي الاول",
+  //   discrimination_en: "it is the first portfolio for me",
+  // },
   {
-    title_ar: "موقعي التعريفي الاول",
-    title_en: "my first portfolio",
-    urlSite: "https://zlllxjdbnrqiiibu3fowvw.on.drv.tw/youssef%20elogail%20portfolio/1-en.html",
-    urlImg:"./imgs/img_site/1.png",
-    lang: ["html5", "css3","javaScript"],
-    discrimination_ar: "هذا هو موقعي التعريفي الاول",
-    discrimination_en: "it is the first portfolio for me",
+    title_ar: "Qubly",
+    title_en: "Qubly",
+    urlSite: "https://6495a2ab219e323860da58c6--rainbow-fudge-0bdf38.netlify.app/",
+    urlImg:"./imgs/img_site/3.png",
+    lang: ["html5", "css3","sass"],
+    discrimination_ar: "موقع Qubly الفكره منه التطبيق علي ال sass و تحول التصميم الي موقع فعلي",
+    discrimination_en: " The idea of ​​​​Qubly website is to apply it to the sass and turn the design into an actual website",
+    gitHubLink:"https://github.com/YoussefElogail/Qubly/tree/main",
   },
   {
     title_ar: "موقع قائمة المهام",
@@ -21,6 +31,7 @@ const siteData = [
     lang: ["html5", "css3","javaScript","React.js","Firebase"],
     discrimination_ar: "موقع قائمة المهام تم استخدام firebase (Authentication-Firestore Database)",
     discrimination_en: " To do list website used firebase  (Authentication-Firestore Database)",
+    gitHubLink:"https://github.com/YoussefElogail/to-do-list/tree/to-do-list-(react.js)-v1.1",
   },
 
 ];
@@ -35,6 +46,7 @@ const Projects = () => {
           name="description"
           content="In the field of front-end development, I have always strived to develop and improve my knowledge and skills by overcoming obstacles, and have always strived to reach the best throughput as soon as possible."
         />
+        
       </Helmet>
       <Header />
       <main className="main_projects flex con">
@@ -59,9 +71,10 @@ const Projects = () => {
               <ul className='flex con_ul'>
                 {item.lang.map((item) => {
                   return(
-                    <li key={item}>{item}</li>
+                    <li style={{fontSize:"14px"}} key={item}>{item}</li>
                   )
                 })}
+                
                 <div className='when_hover'>
                   <p dir="auto">
                     {i18n.language===("ar")&&item.discrimination_ar}
@@ -83,6 +96,10 @@ const Projects = () => {
                   </ul>
                 </div>
               </ul>
+              <a className="gh-links" rel="noopener noreferrer" target="_blank" href={item.gitHubLink}>
+                  {i18n.language===("ar")&&"عرض اكواد المشروع"}
+                  {i18n.language===("en")&&"View project codes"}
+                </a>
             </div>
               )
             })}
