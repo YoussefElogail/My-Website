@@ -1,0 +1,44 @@
+main.main_home .con_sec{
+  border-radius: 5px;
+}
+@media (min-width:501px) {
+  main.main_home .con_sec{
+    max-width: 700px;
+  }
+}
+
+
+main.main_home .sec_1 .me.flex{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main.main_home .sec_1 .me.flex .my_pic{
+  background-image: url(../../../public/imgs/my_pic.jpg);
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.light main.main_home .sec_1 .me.flex .my_pic{
+  box-shadow: #00000042 0px 0px 2px 2px;
+}
+.dark main.main_home .sec_1 .me.flex .my_pic{
+  box-shadow: #ffffff42 0px 0px 2px 2px;
+}
+main.main_home .sec_1 .me.flex h1,main.main_home .sec_1 .me.flex h2{
+  text-align: center;
+  font-size: var(---font1);
+  font-weight: normal;
+  text-transform: capitalize;
+}
+main.main_home .sec_2 h3{
+  text-align: center;
+  font-size: var(---font2);
+  text-transform: capitalize;
+
+}
+main.main_home .sec_2 p{
+  padding: 10px;
+}

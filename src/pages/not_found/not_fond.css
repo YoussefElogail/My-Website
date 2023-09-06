@@ -1,0 +1,7 @@
+.main_nf .con_sec{
+  width: 300px;
+  padding: 10px;
+  font-size: var(---font1);
+  border-radius: 5px;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+footer{
+  padding: 20px;
+}
+.light footer{
+  background-color: var(---colorLight1);
+  box-shadow: #00000042 0px -2px 4px 1px;
+}
+.dark footer{
+  background-color: var(---colorDark1);
+  box-shadow: #ededed36  0px -2px 4px 1px;
+}
+
+footer .con p{
+  text-align: center;
+  font-size: var(---font3);
+  text-transform: capitalize;
+}
+footer .con div {
+  text-align: end;
+}
+footer .con  a {
+  display: inline-block;
+  padding: 2px 0;
+  transition: all .2s;
+  text-transform: capitalize;
+}
+.light footer .con a{
+  color: var(---fontColor);
+}
+.dark footer .con a{
+  color: var(---fontColorDark);
+}
+footer .con  a:hover ,footer .con a.active{
+  text-decoration: underline;
+}

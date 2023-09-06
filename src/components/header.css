@@ -1,0 +1,273 @@
+/* =============
+ table of contents
+===============
+0.root
+
+(in dispaly (0px ==> 500px))
+1. header
+
+2. frest div => (ul) in header
+ 1.ul
+ 2 icon down in ul in frast div in header
+ 3 div => (li)
+  1.li
+
+3.button in header
+    
+4. nav in header 
+ 1.span (icon)
+ 2.div (parint of links)
+ 3.(links)=> a
+ 
+*/
+
+
+/* (in dispaly (0px ==> 500px)) */
+
+/* 1. header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* 2. frest div => (ul) in header */
+header .con.flex {
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+/* 1.ul */
+header .con.flex ul {
+  padding: 0 5px;
+  list-style: none;
+  position: relative;
+  width: 100px;
+  background-color: transparent;
+  font-size: var(---font3);
+  cursor: pointer;
+  text-transform: capitalize;
+  
+}
+
+
+/* 2 icon down in ul in frast div in header */
+header .con.flex ul .icon-caret-down {
+  position: absolute;
+  transition: all 0.1s;
+}
+header .con.flex ul .icon-caret-down.en{
+  top: 8px;
+  right: 2px;
+}
+header .con.flex ul .icon-caret-down.ar{
+  top: 8px;
+  right: 55px;
+}
+header .con.flex ul:hover .icon-caret-down {
+  scale: 0;
+}
+
+/*  3 div => (li) */
+header .con.flex ul .con_li {
+  display: none;
+  padding: 7px 0;
+  position: absolute;
+  width: inherit;
+  left: 0;
+  z-index: 1;
+  background-color: inherit;
+  border-radius: 0 0 var(---borderRadius) var(---borderRadius);
+  text-align: start;
+  
+}
+header .con.flex ul:hover .con_li {
+  padding: 0 10px;
+  display: block;
+
+}
+
+/* 1.li */
+header .con.flex ul .con_li li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header .con.flex ul .con_li li div{
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #3e98c7;
+}
+
+/* 3.button in header */
+header button {
+  all: unset;
+  padding: 0 8px;
+  border-radius: var(---borderRadius);
+  font-size: var(---font3);
+  text-transform: capitalize;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 0 15px;
+}
+header button:hover {
+  scale: 0.96;
+}
+
+/* 4. nav in header  */
+header .con.flex nav.flex {
+  flex-direction: column;
+}
+
+/*  1.span (icon) */
+header .con.flex nav.flex span {
+  text-align: center;
+  cursor: pointer;
+  font-size: 35px;
+  transition: all 0.2s;
+}
+header .con.flex nav.flex span:hover {
+  scale: 0.96;
+}
+
+/* 2.div (parint of links) */
+header .con.flex nav.flex .con_links {
+  text-align: center;
+  position: fixed;
+  padding: 5px 0;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow: auto;
+}
+
+/* 3.(links)=> a */
+header .con.flex nav.flex .con_links a {
+  margin-top: 5px;
+  padding: 7px 0;
+  transition: all .2s;
+  text-transform: capitalize;
+}
+header .con.flex nav.flex .con_links a:hover {
+  scale: 0.99;
+}
+
+.light header{
+  background-color: var(---colorLight1);
+  box-shadow: #00000042 0px 2px 4px 1px;
+}
+.light header .con.flex ul:hover {
+  background-color: var(---colorHover);
+}
+.light header button{
+  border: 2px solid #000;
+}
+.light header button:hover{
+  background-color: var(---colorHover);
+}
+.light header .con.flex nav.flex span{
+  color: var(---fontColor);
+}
+.light header .con.flex nav.flex .con_links {
+  background-color: var(---colorLight1);
+}
+.light header .con.flex nav.flex .con_links a{
+  color: var(---fontColor);
+}
+
+.light header .con.flex nav.flex .con_links a:hover,.light header .con.flex nav.flex .con_links .active{
+  background-color: var(---colorHover);
+}
+
+.dark header{
+  background-color: var(---colorDark1);
+  box-shadow: #ededed36 0px 2px 4px 1px;
+}
+.dark header .con.flex ul:hover {
+  background-color: var(---colorDark2);
+}
+.dark header button{
+  border: 2px solid #ffffff;
+}
+.dark header button:hover{
+  background-color: var(---colorHoverDark);
+}
+.dark header .con.flex nav.flex span{
+  color: var(---fontColorDark);
+}
+.dark header .con.flex nav.flex .con_links {
+  background-color: var(---colorDark1);
+}
+.dark header .con.flex nav.flex .con_links a{
+  color: var(---fontColorDark);
+}
+.dark header .con.flex nav.flex .con_links a:hover,.dark header .con.flex nav.flex .con_links .active{
+  background-color: var(---colorHoverDark);
+}
+
+@media (min-width:570px) {
+
+  
+  /*  1.span (icon) */
+  header .con.flex nav.flex span {
+    display: none;
+  }
+
+  /* 2.div (parint of links) */
+  header .con.flex nav.flex .con_links {
+    display: flex !important;
+    text-align: initial;
+    position: initial;
+    padding: 0;
+    flex-flow: row wrap;
+    z-index: 0;
+    background-color: transparent;
+    overflow: initial;
+  }
+  
+  /* 3.(links)=> a */
+  header .con.flex nav.flex .con_links a {
+    margin: 0 8px;
+    padding:  0;
+  }
+  header .con.flex nav.flex .con_links .active{
+    background-color: transparent !important;
+  }
+  .light header .con.flex nav.flex .con_links a{
+    color: var(---fontColor);
+  }
+  .dark header .con.flex nav.flex .con_links a{
+    color: var(---fontColorDark);
+  }
+  header .con.flex nav.flex .con_links a:hover {
+    scale: 0.99;
+  }
+  .light header .con.flex nav.flex .con_links a:hover , .dark header .con.flex nav.flex .con_links a:hover {
+    background-color: transparent;
+  }
+  header .con.flex nav.flex .con_links a::after,header .con.flex nav.flex .con_links .active::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: 15px;
+    width: inherit;
+  }
+  .light header .con.flex nav.flex .con_links a:hover:after,.light header .con.flex nav.flex .con_links .active::after{
+    box-shadow: #00000057 0px 1px 2px 1px;
+  }
+  .dark header .con.flex nav.flex .con_links a:hover:after,.dark header .con.flex nav.flex .con_links .active::after{
+    box-shadow: #ededed8a 0px 1px 2px 1px;
+  }
+
+
+}
+
+

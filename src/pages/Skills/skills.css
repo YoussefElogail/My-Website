@@ -1,0 +1,27 @@
+.main_skills section {
+  max-width: 360px;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.main_skills section h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(---font1);
+}
+.main_skills .con_skills {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main_skills .con_skills .img_skills {
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main_skills .con_skills p {
+  text-transform: capitalize;
+  margin-top: -9px;
+}

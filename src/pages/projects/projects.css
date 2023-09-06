@@ -1,0 +1,136 @@
+.main_projects {
+  padding: 40px;
+}
+
+.main_projects .con_sec {
+  max-width: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.main_projects .con_sec h1 {
+  text-align: center;
+  font-size: var(---font1);
+}
+.main_projects .con_sec .con_card {
+  flex-direction: column;
+  align-items: center;
+}
+.main_projects .con_sec .card {
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.light .main_projects .con_sec .card {
+  background-color: var(---colorLight2);
+}
+.dark .main_projects .con_sec .card {
+  background-color: var(---colorDark2);
+}
+.main_projects .con_sec .card h2 {
+  width: 100%;
+  text-align: center;
+  font-size: var(---font2);
+  font-weight: normal;
+}
+.light .main_projects .con_sec .card h2 {
+  border-bottom: 2px solid var(---colorDark1);
+}
+.dark .main_projects .con_sec .card h2 {
+  border-bottom: 2px solid var(---colorLight2);
+}
+.main_projects .con_sec .card .my_pro_pic {
+  height: 146px;
+  width: 250px;
+  background-size: cover;
+  background-position: center ;
+  transition: all 0.2s;
+}
+.main_projects .con_sec .card .my_pro_pic:hover {
+  opacity: 0.85;
+}
+.main_projects .con_sec .con_ul {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.light .main_projects .con_sec .card .con_ul {
+  border-top: 2px solid var(---colorDark1);
+}
+.dark .main_projects .con_sec .card .con_ul {
+  border-top: 2px solid var(---colorLight2);
+}
+.main_projects .con_sec .con_ul li {
+  padding: 0;
+  margin: 0 5px 3px;
+}
+.main_projects .con_sec .con_ul .when_hover {
+  display: none;
+  position: absolute;
+  bottom: 125%;
+  width: 200px;
+  right: 50%;
+  translate: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.light .main_projects .con_sec .con_ul .when_hover {
+  color: var(---colorDark1);
+  background-color: var(---colorLight1);
+}
+.dark .main_projects .con_sec .con_ul .when_hover {
+  color: var(---colorLight1);
+  background-color: var(---colorDark1);
+}
+.main_projects .con_sec .con_ul:hover .when_hover {
+  display: block;
+}
+.main_projects .con_sec .con_ul:hover .when_hover p {
+  border-bottom: 2px solid;
+}
+
+.main_projects .con_sec .con_ul:hover .when_hover ul {
+  list-style: none;
+}
+.main_projects .con_sec .con_ul:hover .when_hover ul div {
+  text-align: center;
+}
+.main_projects .con_sec .con_ul .when_hover::after {
+  content: "";
+  position: absolute;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: 100%;
+  left: 50%;
+  translate: -50%;
+}
+.light .main_projects .con_sec .con_ul .when_hover::after {
+  border-top: 15px solid var(---colorLight1);
+}
+.dark .main_projects .con_sec .con_ul .when_hover::after {
+  border-top: 15px solid var(---colorDark1);
+}
+
+@media (min-width: 660px) {
+  .main_projects .con_sec {
+    max-width: 1100px;
+    padding: 0;
+  }
+  .main_projects .con_sec h1 {
+    margin: 20px;
+  }
+  .main_projects .con_sec .con_card {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
