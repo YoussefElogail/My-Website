@@ -13,8 +13,8 @@ const Header = () => {
         <div className="flex">
           <ul>
             {t("Language")}
-            {i18n.language===("en")&&<div  className="icon-caret-down en"></div>}
-            {i18n.language===("ar")&&<div  className="icon-caret-down ar"></div>}
+            {i18n.language===("en")&&<div  className="icon-sort-down en"></div>}
+            {i18n.language===("ar")&&<div  className="icon-sort-down ar"></div>}
             <div className="con_li">
               <li onClick={() => {
                 i18n.changeLanguage("ar")
@@ -46,7 +46,7 @@ const Header = () => {
             onClick={() => {
               setMenu("flex");
             }}
-            className="icon-menu"
+            className="icon-bars"
           ></span>
           <div style={{ display: menu }} className="con_links flex">
             <span

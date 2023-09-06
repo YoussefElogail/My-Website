@@ -25,12 +25,12 @@ const skillsAndImg = [
     urlImg: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
   },
   {
-    name: "bootstrap",
+    name: "bootstrap 5",
     percent: 70,
     urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
   },
   {
-    name:"sass",
+    name:"scss",
     percent:75,
     urlImg:"https://cdn-icons-png.flaticon.com/512/5968/5968358.png"
   },
@@ -60,11 +60,13 @@ const skillsAndImg = [
 
 
 const Skills = () => {
-  const { i18n } = useTranslation();
+  const { i18n ,t} = useTranslation();
   return (
     <>
       <Helmet>
-        <title>skills</title>
+        <title>
+          {t("Skills")}
+        </title>
         <meta
           name="description"
           content="In the field of front-end development, I have always strived to develop and improve my knowledge and skills by overcoming obstacles, and have always strived to reach the best throughput as soon as possible."

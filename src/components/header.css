@@ -55,19 +55,19 @@ header .con.flex ul {
 
 
 /* 2 icon down in ul in frast div in header */
-header .con.flex ul .icon-caret-down {
+header .con.flex ul .icon-sort-down {
   position: absolute;
   transition: all 0.1s;
 }
-header .con.flex ul .icon-caret-down.en{
-  top: 8px;
+header .con.flex ul .icon-sort-down.en{
+  top: 5px;
   right: 2px;
 }
-header .con.flex ul .icon-caret-down.ar{
-  top: 8px;
+header .con.flex ul .icon-sort-down.ar{
+  top: 5px;
   right: 55px;
 }
-header .con.flex ul:hover .icon-caret-down {
+header .con.flex ul:hover .icon-sort-down {
   scale: 0;
 }
 

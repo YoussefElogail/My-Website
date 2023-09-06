@@ -1,3 +1,7 @@
+main.main_home{
+  max-width: 400px;
+  margin: 0 auto;
+}
 main.main_home .con_sec{
   border-radius: 5px;
 }
@@ -8,6 +12,37 @@ main.main_home .con_sec{
 }
 
 
+main.main_home .sec_1 .cv{
+  cursor: pointer;
+  width: fit-content;
+  margin: 10px auto ;
+  background-color: inherit;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #a9a9a9;
+  transition: all .2s linear;
+}
+
+main.main_home .sec_1 .cv:hover{
+  box-shadow: 0 0 10px #acacac;
+}
+main.main_home .sec_1 .cv:active{
+  scale: .97;
+}
+.light main.main_home .sec_1 .cv .btn{
+  color: var(---colorDarck1);
+}
+.dark main.main_home .sec_1 .cv .btn{
+  color: var(---colorLight1);
+}
+main.main_home .sec_1 .cv .btn i{
+  margin: 0 3px;
+  font-size: 18px;
+  transition: all .2s;
+}
+main.main_home .sec_1 .cv:hover .btn i{
+  color: #F40F02;
+}
 main.main_home .sec_1 .me.flex{
   flex-direction: column;
   justify-content: center;
@@ -33,7 +68,7 @@ main.main_home .sec_1 .me.flex h1,main.main_home .sec_1 .me.flex h2{
   font-weight: normal;
   text-transform: capitalize;
 }
-main.main_home .sec_2 h3{
+/* main.main_home .sec_2 h3{
   text-align: center;
   font-size: var(---font2);
   text-transform: capitalize;
@@ -41,4 +76,4 @@ main.main_home .sec_2 h3{
 }
 main.main_home .sec_2 p{
   padding: 10px;
-}
+} */

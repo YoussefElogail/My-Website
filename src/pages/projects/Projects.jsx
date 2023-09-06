@@ -16,12 +16,32 @@ const siteData = [
   {
     title_ar: "Qubly",
     title_en: "Qubly",
-    urlSite: "https://6495a2ab219e323860da58c6--rainbow-fudge-0bdf38.netlify.app/",
+    urlSite: "https://rainbow-fudge-0bdf38.netlify.app/",
     urlImg:"./imgs/img_site/3.png",
-    lang: ["html5", "css3","sass"],
-    discrimination_ar: "موقع Qubly الفكره منه التطبيق علي ال sass و تحول التصميم الي موقع فعلي",
-    discrimination_en: " The idea of ​​​​Qubly website is to apply it to the sass and turn the design into an actual website",
+    lang: ["html5", "css3","scss"],
+    discrimination_ar: "موقع Qubly الفكره منه التطبيق علي ال scss و تحول التصميم الي موقع فعلي",
+    discrimination_en: " The idea of ​​​​Qubly website is to apply it to the scss and turn the design into an actual website",
     gitHubLink:"https://github.com/YoussefElogail/Qubly/tree/main",
+  },
+  {
+    title_ar: "Bondi",
+    title_en: "Bondi",
+    urlSite: "https://candid-kataifi-f96d6f.netlify.app/",
+    urlImg:"./imgs/img_site/4.png",
+    lang: ["html5", "css3","scss","bootstrap 5"],
+    discrimination_ar: "الفكرة من موقع Bondi هو التطبيق علي ال bootstrap 5 ",
+    discrimination_en: "The idea from Bondi is to apply it to bootstrap 5",
+    gitHubLink:"https://github.com/YoussefElogail/Bondi_bootstrap-and-scss",
+  },
+  {
+    title_ar: "معلومات العملاء",
+    title_en: "Customers Information",
+    urlSite: "https://bootstrap-product.web.app/",
+    urlImg:"./imgs/img_site/5.png",
+    lang: ["html5", "css3","scss","bootstrap 5","javascript"],
+    discrimination_ar: "فكرة موقع معلومات العملاء هو التطبيق على bootstrap و scss و ال javascript",
+    discrimination_en: "The idea of ​​a customer information website is an application based on bootstrap, scss and javascript",
+    gitHubLink:"https://github.com/YoussefElogail/bootstrap-product",
   },
   {
     title_ar: "موقع قائمة المهام",
@@ -31,17 +51,19 @@ const siteData = [
     lang: ["html5", "css3","javaScript","React.js","Firebase"],
     discrimination_ar: "موقع قائمة المهام تم استخدام firebase (Authentication-Firestore Database)",
     discrimination_en: " To do list website used firebase  (Authentication-Firestore Database)",
-    gitHubLink:"https://github.com/YoussefElogail/to-do-list/tree/to-do-list-(react.js)-v1.1",
+    gitHubLink:"https://github.com/YoussefElogail/to-do-list_react.js_v2",
   },
 
 ];
 const Projects = () => {
-  const { i18n } = useTranslation();
+  const { i18n ,t} = useTranslation();
 
   return (
     <>
     <Helmet>
-        <title>Projects</title>
+        <title>
+    {t("Projects")}
+        </title>
         <meta
           name="description"
           content="In the field of front-end development, I have always strived to develop and improve my knowledge and skills by overcoming obstacles, and have always strived to reach the best throughput as soon as possible."

@@ -11,14 +11,14 @@ const contactImg = [
   {
     title: "Instagram",
     imgUrl: "https://cdn-icons-png.flaticon.com/512/3955/3955024.png",
-    urlSite: "https://www.instagram.com/youssefmohamedd790/",
+    urlSite: "https://instagram.com/youssef_el_ogail?igshid=MzNlNGNkZWQ4Mg==",
   },
 
-  {
-    title: "WhatsApp",
-    imgUrl: "https://cdn-icons-png.flaticon.com/512/3670/3670051.png",
-    urlSite: "https://wa.me/qr/CH7HTKIL67ABF1",
-  },
+  // {
+  //   title: "WhatsApp",
+  //   imgUrl: "https://cdn-icons-png.flaticon.com/512/3670/3670051.png",
+  //   urlSite: "https://wa.me/qr/CH7HTKIL67ABF1",
+  // },
   {
     title: "Telegram",
     imgUrl: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
