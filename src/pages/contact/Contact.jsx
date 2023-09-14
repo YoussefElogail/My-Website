@@ -4,27 +4,6 @@ import Footer from "../../components/Footer";
 import { useTranslation } from "react-i18next";
 const contactImg = [
   {
-    title: "Facebook",
-    imgUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968764.png",
-    urlSite: "https://www.facebook.com/youssefelgail/",
-  },
-  {
-    title: "Instagram",
-    imgUrl: "https://cdn-icons-png.flaticon.com/512/3955/3955024.png",
-    urlSite: "https://instagram.com/youssef_el_ogail?igshid=MzNlNGNkZWQ4Mg==",
-  },
-
-  // {
-  //   title: "WhatsApp",
-  //   imgUrl: "https://cdn-icons-png.flaticon.com/512/3670/3670051.png",
-  //   urlSite: "https://wa.me/qr/CH7HTKIL67ABF1",
-  // },
-  {
-    title: "Telegram",
-    imgUrl: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
-    urlSite: "https://t.me/Joe3o",
-  },
-  {
     title: "LinkedIn",
     imgUrl: "https://cdn-icons-png.flaticon.com/512/145/145807.png",
     urlSite: "https://www.linkedin.com/in/youssef-el-ogail-57404a262",
@@ -34,6 +13,11 @@ const contactImg = [
     imgUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
     urlSite: "https://github.com/YoussefElogail",
   },
+  {
+    title: "Twitter",
+    imgUrl: "https://cdn-icons-png.flaticon.com/512/5969/5969020.png?ga=GA1.1.2146089281.1689745396",
+    urlSite: "https://twitter.com/JOEOGAIL"
+  }
 ];
 const Contact = () => {
   const { i18n } = useTranslation();

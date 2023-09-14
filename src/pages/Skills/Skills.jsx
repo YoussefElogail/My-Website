@@ -2,10 +2,10 @@ import "./skills.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "react-circular-progressbar/dist/styles.css";
-import {
+// import {
 
-  CircularProgressbarWithChildren,
-} from "react-circular-progressbar";
+//   CircularProgressbarWithChildren,
+// } from "react-circular-progressbar";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 const skillsAndImg = [
@@ -25,14 +25,19 @@ const skillsAndImg = [
     urlImg: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
   },
   {
-    name: "bootstrap 5",
-    percent: 70,
-    urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
-  },
-  {
     name:"scss",
     percent:75,
     urlImg:"https://cdn-icons-png.flaticon.com/512/5968/5968358.png"
+  },
+  {
+    name: "bootstrap 5",
+    percent: 75,
+    urlImg: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+  },
+  {
+    name : "Tailwind Css",
+    percent: 75,
+    urlImg: "https://res.cloudinary.com/dg17bwjup/image/upload/v1689759534/89711240-4172a200-d989-11ea-8d51-4aaf922fa407-removebg-preview_aodxfi.png",
   },
   {
     name: "javaScript",
@@ -49,6 +54,29 @@ const skillsAndImg = [
     percent: 70,
     urlImg:
       "https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png",
+  },
+  {
+    name: "Git",
+    percent: 75,
+    urlImg:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
+  },
+  {
+    name: "GitHub",
+    percent: 75,
+    urlImg:
+      "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+  },
+  {
+    name: "npm",
+    percent: 80,
+    urlImg: "https://seeklogo.com/images/N/npm-logo-F0E1FE956F-seeklogo.com.png",
+  },
+  {
+    name: "Postman",
+    percent: 70,
+    urlImg:
+      "https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png",
   },
   {
     name: "Firebase (web)",
