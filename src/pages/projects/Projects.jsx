@@ -56,7 +56,7 @@ const siteData = [
   {
     title_ar: "Dev Media",
     title_en: "Dev Media",
-    urlSite: "https://6501cfc75cd4a708b71e726e--illustrious-marshmallow-a23b1c.netlify.app/",
+    urlSite: "https://dev-mediaa.netlify.app/",
     urlImg:"./imgs/img_site/8.png",
     lang: ["html5", "css3","scss","bootstrap 5","javascript","Js API Axios"],
     discrimination_ar: "الفكرة من المشروع عمل موقع تواصل اجتماعي حقيقي عن طريق الحصول علي بيانات من ال API ثم اظهارها في الموقع ,مع امكانية انشاء حساب و تسجيل دخول و المزيد من الوظائف",
