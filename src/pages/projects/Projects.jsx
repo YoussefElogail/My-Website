@@ -89,8 +89,8 @@ const Projects = () => {
           name="description"
           content="In the field of front-end development, I have always strived to develop and improve my knowledge and skills by overcoming obstacles, and have always strived to reach the best throughput as soon as possible."
         />
-        
-      </Helmet>
+    </Helmet>
+      
       <Header />
       <main className="main_projects flex con">
         <section className="con_sec">
